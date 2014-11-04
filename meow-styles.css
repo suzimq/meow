@@ -271,7 +271,7 @@ figcaption h3:first-of-type {
 /* MEDIA QUERIES */
 
 /*@media screen and (max-width: 480px) {*/
-@media screen and (max-width: 568px) {
+@media screen and (max-device-width: 568px) {
 
 .wrapper {
 	width: 100%;
@@ -289,34 +289,37 @@ h1 {
 	float: none;
 } 
 
-nav ul {
-	float: none;
-	margin-left: 0%;
+#nav ul {
+	margin-left: 0px;	
 }
 
-nav ul li {
+#nav ul li {
+	background-color: white;
 	margin-top: 0px;
-	margin-right: 10px;
+	margin-right: 0px;
+	padding: 0px;
 	float: none;
 	text-align: left;
-	width: auto;
+	width: 100%;
 	border: none;
 }
 
 #content {
 	float: none;
-	margin: 0px;
 	width: 100%;
 }
 
 #content_inner {
 	margin: 0px;
+	padding: 0px;
 }
 
 #sidebar {
 	float: none;
 	width: 100%;
+	margin: 0px;
 }
+
 
 #rescue_background, #calico_background, #tuxedo_background {
 	background: none;
