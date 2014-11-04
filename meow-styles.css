@@ -1,0 +1,324 @@
+/* CSS Document */
+
+@font-face {
+    font-family: 'crimson_textitalic';
+    src: url('fonts/crimsontext-italic-webfont.eot');
+    src: url('fontscrimsontext-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/crimsontext-italic-webfont.woff2') format('woff2'),
+         url('fonts/crimsontext-italic-webfont.woff') format('woff'),
+         url('fonts/crimsontext-italic-webfont.ttf') format('truetype'),
+         url('fonnts/crimsontext-italic-webfont.svg#crimson_textitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubunturegular';
+    src: url('fonts/ubuntu-r-webfont.eot');
+    src: url('fonts/ubuntu-r-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ubuntu-r-webfont.woff2') format('woff2'),
+		 
+         url('fonts/ubuntu-r-webfont.woff') format('woff'),
+         url('fonts/ubuntu-r-webfont.ttf') format('truetype'),
+         url('fonts/ubuntu-r-webfont.svg#ubunturegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntuitalic';
+    src: url('fonts/ubuntu-ri-webfont.eot');
+    src: url('fonts/ubuntu-ri-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ubuntu-ri-webfont.woff2') format('woff2'),
+         url('fonts/ubuntu-ri-webfont.woff') format('woff'),
+         url('fonts/ubuntu-ri-webfont.ttf') format('truetype'),
+         url('fonts/ubuntu-ri-webfont.svg#ubuntuitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Default Styles */
+* {
+	font-family: 'ubunturegular', sans-serif;
+	font-size: 100%;
+	margin: 0px;
+	padding: 0px;
+	letter-spacing: 1px;
+}
+
+/* Classes */
+.clearfloat {
+	clear: both;
+}
+
+.blue {
+	background-color: #6868FB;
+}
+
+.peach {
+	background-color: #FFB983;
+}
+
+.peach_alpha {
+	background-color: rgba(255,185,131,.7);
+}
+
+.green {
+	background-color: #9DFF9C;
+}
+
+.rounded {
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* Header Styles */
+h1, h2 {
+	color: #2525A6;
+	text-align: center;
+	font-family: crimson_textitalic, merienda-one, cursive;
+	font-style: normal;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 180%;
+	margin: 0px 110px;
+	padding-top: 5px;
+	background-color: white;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	border: 5px solid #9DFF9C;
+}
+
+h2 {
+	font-size: 150%;
+}
+
+h3 {
+	font-size: 110%;
+}
+
+ul {
+	list-style-type: square;
+	padding-left: 20px;
+}
+
+/* Page */
+body {
+	background-color: gray;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	text-align: left;
+	background-color: #E8E8E8;
+}
+
+/* Header */
+#header {
+	height: 160px;
+	background-color: #3636F6;
+	border-bottom: 4px solid #FFB983;
+}
+#header img {
+	margin-top: 10px;
+	padding: 8px;
+	margin-bottom: 10px;
+	float: left;
+	border: 8px solid #FFB983;
+	background-color: #FFF;
+	margin-left: 10px;
+}
+
+#nav ul {
+	margin-left: 33%;
+	list-style-type: none;
+}
+
+#nav ul li {
+	background-color: #FFB983;
+	margin-top: 72px;
+	margin-right: 10px;
+	padding: 3px;
+	float: left;
+	font-size: 105%;
+	text-align: center;
+	width: 15%; 
+	border: 4px solid #9DFF9C; 
+}
+
+#nav ul li a {
+	text-decoration: none;
+}
+
+#nav li a:hover {
+	color: red;
+}
+
+#content {
+	float: left;
+	width: 65%;
+	margin-top: 20px;
+}
+#content-inner {
+	margin: 10px;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	vertical-align: top;
+/*	background-color: rgba(255,185,131,1.0);*/
+}
+#sidebar {
+	float: right;
+	width: 35%;
+	margin-top: 20px;
+}
+#sidebar_inner {
+	margin-top: 10px;
+	margin-right: 10px;
+	padding: 10px 0px 5px 0px;
+	vertical-align: top;
+	background-color: rgba(104,104,251,1.00);
+}
+
+figure img {
+	display: block;
+	margin: auto;
+}
+
+figcaption {
+	padding: 5px;
+	color: white;
+	text-align: center
+}
+
+#figcaption_rescue h3:last-of-type {
+	color: red;
+}
+
+/* TEXT EFFECTS and ALPHA CHANNEL */
+
+h1 {	
+	font-family:  'ubunturegular', sans-serif;
+	font-weight: bold;
+	color: rgba(37,37,166,0.8);
+	text-shadow: 1px 2px #20A949;
+}
+
+figcaption h3:first-of-type {
+	text-shadow: 2px 1px black;
+}
+
+#figcaption_rescue h3:first-of-type {
+	text-shadow: 2px 1px red;
+}
+
+/* MULTIPLE COLUMNS */
+
+.column_count { 
+  -moz-column-count: 2;
+  -moz-column-gap: 2em;
+  -moz-column-rule: 0.2em solid #9DFF9C;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 2em;
+  -webkit-column-rule: 0.2em solid #9DFF9C;
+  column-count: 2;
+  column-gap: 2em;
+  column-rule: 0.3em solid #9DFF9C;
+}
+
+/* MULTIPLE BACKGROUND IMAGES */
+#rescue_background {
+	min-height: 800px;
+	background: 
+	url(images/blackcage_200.jpg) no-repeat left bottom,
+	url(images/kittenscage_sm.jpg) no-repeat 265px bottom,
+	url(images/tabbycage_sm.jpg) no-repeat 692px bottom,
+	url(images/tuxedocage_sm.jpg) no-repeat 543px bottom,
+	url(images/grayback1.png) repeat 0px top;	
+}
+
+#calico_background {
+	min-height: 800px;
+	background:
+	url(images/tama-station_sm.jpg) no-repeat left bottom,
+	url(images/tama-chibi_sm.jpg) no-repeat 52% bottom,
+	url(images/cat_train.jpg) no-repeat right bottom,
+	url(images/grayback1.png) repeat 0px top;
+}
+
+#tuxedo_background {
+	min-height: 800px;
+	background:
+	url(images/felix_198.png) no-repeat 40% bottom,
+	url(images/sylvester_stand_198.png) no-repeat 60% bottom,
+	url(images/grayback1.png) repeat 0px top;
+}
+	
+/* BOX EFFECTS */
+/* I've used class="rounded" throughout the site adding rounded corners to divs, images, figure, and paragraphs, h1 also uses a slightly different rounded corner */
+
+/* COLOR AND OPACITY */
+/* I created class="peach_alpha" and demonstrated on the Calico page.  The paragraph is class peach, while the container is class peach_alpha.  You can see the slight difference in color. */
+
+/* MEDIA QUERIES */
+
+/*@media screen and (max-width: 480px) {*/
+@media screen and (max-width: 568px) {
+
+.wrapper {
+	width: 100%;
+}
+
+h1 {
+	margin: 0;
+}
+
+#header {
+	height: auto; 
+}
+
+#header img {
+	float: none;
+} 
+
+nav ul {
+	float: none;
+	margin-left: 0%;
+}
+
+nav ul li {
+	margin-top: 0px;
+	margin-right: 10px;
+	float: none;
+	text-align: left;
+	width: auto;
+	border: none;
+}
+
+#content {
+	float: none;
+	margin: 0px;
+	width: 100%;
+}
+
+#content_inner {
+	margin: 0px;
+}
+
+#sidebar {
+	float: none;
+	width: 100%;
+}
+
+#rescue_background, #calico_background, #tuxedo_background {
+	background: none;
+}
+}
