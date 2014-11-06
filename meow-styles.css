@@ -111,6 +111,8 @@ ul {
 /* Page */
 body {
 	background-color: gray;
+	background:
+	url(images/mediumgrayback.png) repeat left top;
 }
 
 .wrapper {
